@@ -1,1 +1,2 @@
 cellpose_model/models/
+cellpose_model/*.tiff
