@@ -1,3 +1,4 @@
+"""Puts slices into train/test data folders. Neuromasts treated with LY drug are put into the training set. 80/20 split"""
 import os
 import glob
 import shutil
