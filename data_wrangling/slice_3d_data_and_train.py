@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 #%%
+"""Slice 3D Z-stack. Loads matching trios of mask + nuclei + membrane 3D tiff stacks.
+Slices in 3 orientations to maximize training data: XY XZ YZ + their mask pairs"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import io
