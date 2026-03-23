@@ -1,3 +1,5 @@
+"""Train cellpose model using user data; code from https://cellpose.readthedocs.io/en/latest/train.html"""
+
 from cellpose import io, models, train
 io.logger_setup()
 
