@@ -1,7 +1,9 @@
+"""Plots loss output of model training. (Had to do it manually since it didn't save at the end :()"""
+
 import matplotlib.pyplot as plt
 import os
 
-path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/git/cellpose-training-seminar-sp2026"
+path = "./cellpose-training-seminar-sp2026"
 save_path = os.path.join(path, "train_vs_test_loss.png")
 
 train_losses = [
