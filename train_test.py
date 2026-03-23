@@ -37,11 +37,8 @@ model = models.CellposeModel(gpu=True)
 
 model_path, train_losses, test_losses = train.train_seg(model.net,
                             train_data=images, train_labels=labels,
-                            test_data=test_images, test_labels=test_labels,
-<<<<<<< HEAD
+                            test_data=test_images,
                             weight_decay=0.1, learning_rate=1e-5,
                             n_epochs=300, model_name="neuromast_cellpose_trained_model")
-=======
                             weight_decay=0.1, leaarning_rate=1e-5,
                             n_epochs=300, model_name="neuromast_cellpose_trained_model", save_path=save_dir)
->>>>>>> d856342 (Update train_test.py)
