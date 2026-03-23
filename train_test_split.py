@@ -7,6 +7,7 @@ data  = "/Fine_Tune/Slices/"
 train_data = "/Fine_Tune/train/"
 test_data  = "/Fine_Tune/test/"
 
+
 os.makedirs(train_data, exist_ok=True)
 os.makedirs(test_data, exist_ok=True)
 
