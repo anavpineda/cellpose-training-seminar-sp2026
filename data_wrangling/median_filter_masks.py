@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""Smooths out the edges of manually segmented cells. Allows for noise reduction while still preserving edges.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import io
