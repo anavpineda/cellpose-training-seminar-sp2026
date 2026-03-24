@@ -1,4 +1,4 @@
-- **Cellpose model** trained on Zebrafish neuromasts, specifically the membrane and nucleus channels.
+**Cellpose model** trained on Zebrafish neuromasts, specifically the membrane and nucleus channels.
 - Set up the cellpose environment [here](https://github.com/mouseland/cellpose#)
   - If you get a numpy error, fix it with:
     ```bash
