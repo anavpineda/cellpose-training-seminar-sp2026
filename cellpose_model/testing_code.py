@@ -7,8 +7,8 @@ from skimage import io as skio
 import os
 io.logger_setup()
 
-nuclei_path = "/hpc/projects/jacobo_group/iSim_processed_files/HCR/2025-06-25_N2V_model_training_tif/final_hcr_results/dla/dmso/denoised/tiffs/fish_dmsobdlafish1/she_2.tiff"
-membrane_path = "/hpc/projects/jacobo_group/iSim_processed_files/HCR/2025-06-25_N2V_model_training_tif/final_hcr_results/dla/dmso/denoised/tiffs/fish_dmsobdlafish1/membrane_2.tiff"
+nuclei_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/raw/20251021_she_1_wt_fish1.tiff"
+membrane_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/raw/20251021_membrane_1_wt_fish1.tiff"
 model_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/models/neuromast_cellpose_trained_model"
 output_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/final_outputs"
 
@@ -22,5 +22,5 @@ img[1,:,:,:] = membrane
 model = models.CellposeModel(pretrained_model=model_path, gpu=True)
 masks, flows, styles = model.eval(img, diameter=None, channels=[1,2], stitch_threshold=0.5, channel_axis=0, z_axis=1)
 
-save_name = os.path.join(output_path, "dmsodlafish1_masks.tiff")
+save_name = os.path.join(output_path, "wtdldfish1_masks.tiff")
 skio.imsave(save_name, masks, check_contrast=False)
