@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-"""Smooths out the edges of manually segmented cells. Allows for noise reduction while still preserving edges.
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import io
@@ -15,9 +12,15 @@ from skimage.transform import rescale,resize
 import raster_geometry as rg
 import sys
 
-mask_path = './fixed_labels/'
-img_path = '../'
-output_path = './median_filter/'
+"""Smooths out the edges of manually segmented cells. Allows for noise reduction while still preserving edges.
+Inputs:
+    fixed_labels: manually segmented cells
+Outputs:
+    Segmentation with added median filter
+"""
+
+mask_path = '/fixed_labels'
+output_path = '/median_filter'
 
 os.makedirs(output_path, exist_ok=True)
 
