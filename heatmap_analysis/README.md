@@ -4,4 +4,4 @@
 - This intensity CSV can be used in calculate_mean_intensity.py, which calculates the mean intensity for one neuromast
 - Based on the neuromast intensity, an ANOVA can be run to test difference between treatment groups
 
-- I can provide gene expression of the deltaD gene for wildtype neuromasts [here](), not for treatment groups, though.
+- I can provide gene expression of the deltaD gene for wildtype neuromasts [here](https://drive.google.com/drive/folders/1FLiIG_7ykv3GqEMucFM5vUPLPKgbL7rR?usp=sharing), not for treatment groups, though.
