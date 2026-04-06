@@ -4,4 +4,4 @@ Google drive of manually segmented cells can be found here: [Link](https://drive
 
 Google drive of predicted segmented cells can be found here: [Link](https://drive.google.com/drive/folders/103S5GkxjkbtI6AHPfhxb7CpDj0xXPSsZ?usp=sharing)
 
-Noise addition should be to raw images of membrane and nucelus
+Noise addition should be to raw images of membrane and nucelus, you can then rerun the analysis to get a new heatmap
