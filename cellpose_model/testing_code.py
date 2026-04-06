@@ -7,8 +7,8 @@ from skimage import io as skio
 import os
 io.logger_setup()
 
-nuclei_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/raw/20251021_she_1_wt_fish1.tiff"
-membrane_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/raw/20251021_membrane_1_wt_fish1.tiff"
+nuclei_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/raw/test/20251021_she_0_wt_fish1.tiff"
+membrane_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/raw/test/20251021_membrane_0_wt_fish1.tiff"
 model_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/models/neuromast_cellpose_trained_model"
 output_path = "/hpc/projects/jacobo_group/projects/cellpose/Membranes/2_Channel/HCR/Fine_Tune/final_outputs"
 
