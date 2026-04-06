@@ -13,5 +13,5 @@
 
 - **Check overlap of example that's already been run**:
   - manual segmentation: [link](https://drive.google.com/file/d/1XIgEIb1QhNrwwk3tYW9xObO3oWLUYrAr/view?usp=sharing)
-  - predicted segmentation: [link](https://drive.google.com/file/d/1kABqekNIkmt5P-otGzrvLdd4uhqIIMFT/view?usp=sharing)
+  - predicted segmentation: [link](https://drive.google.com/file/d/1AoA3PhYiHSoNXs5bipKtYwzDoBPh0cLK/view?usp=sharing)
 - Run the first cell of `/cellpose_model/testing_and_overlap.ipynb`
