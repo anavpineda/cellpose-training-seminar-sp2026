@@ -20,7 +20,8 @@ Inputs:
     mask_path: manually segmented masks
     img_path: raw tiff files of nuceli and membrane
 Output:
-    slice_path: path to new slices folder"""
+    slice_path: path to new slices folder
+    *slices for the testing and training groups should be separate"""
 
 
 # Manually created masks, median filter should be added to reduce noise
