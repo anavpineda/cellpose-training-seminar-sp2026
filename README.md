@@ -8,4 +8,4 @@
 - **Download trained model** [here](https://drive.google.com/file/d/1P4lgsB6mKCQ1hvb_GFW_qbVotln9VUHZ/view?usp=drive_link)
 
 **Visualization of TIFFs is done through Napari**
-- Napari can be downloaded [here]
+- Napari can be downloaded [here](https://napari.org/stable/getting_started/installation.html)
