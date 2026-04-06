@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 #%%
-"""Slice 3D Z-stack. Loads matching trios of mask + nuclei + membrane 3D tiff stacks.
-Slices in 3 orientations to maximize training data: XY XZ YZ + their mask pairs"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import io
@@ -15,6 +12,16 @@ from skimage.transform import rescale,resize
 from skimage.exposure import rescale_intensity
 import sys
 from natsort import natsorted
+
+"""Slice 3D Z-stack. Loads matching trios of mask + nuclei + membrane 3D tiff stacks.
+Slices in 3 orientations to maximize training data: XY XZ YZ + their mask pairs
+Necessary for Cellpose training
+Inputs:
+    mask_path: manually segmented masks
+    img_path: raw tiff files of nuceli and membrane
+Output:
+    slice_path: path to new slices folder"""
+
 
 # Manually created masks, median filter should be added to reduce noise
 mask_path = '/masks'
