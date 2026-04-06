@@ -19,4 +19,4 @@ model_path, train_losses, test_losses = train.train_seg(model.net,
                             weight_decay=0.1, learning_rate=1e-5,
                             n_epochs=300,
                             model_name="neuromast_cellpose_trained_model",
-                            save_path=save_dir)from cellpose import io, models, train
+                            save_path=save_dir)
