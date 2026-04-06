@@ -16,15 +16,19 @@ from skimage.exposure import rescale_intensity
 import sys
 from natsort import natsorted
 
-mask_path = './median_filter/'
-img_path = './raw/'
-slices_path = './Slices/'
+# Manually created masks, median filter should be added to reduce noise
+mask_path = '/masks'
 
+# Raw nuclei and membrane images
+img_path = '/raw'
 
+#Output path containing all the slices, will be very large
+slices_path = '/Slices'
 
+# Edit to match local naming
 masklist = natsorted([i for i in os.listdir(mask_path) if '_median.tiff' in i])
 nuclei_list =natsorted([i for i in os.listdir(img_path) if (('membrane' in i) and ('.tiff' in i))])
-membrane_list =natsorted([i for i in os.listdir(img_path) if (('she' in i) and ('.tiff' in i))])
+membrane_list =natsorted([i for i in os.listdir(img_path) if (('nuclei' in i) and ('.tiff' in i))])
 
 print(masklist)
 print(nuclei_list)
@@ -32,6 +36,7 @@ print(membrane_list)
 
 nfiles = len(masklist)
 
+#Slice data
 for file_n in range(nfiles):
     
     maskname = masklist[file_n]
@@ -96,10 +101,4 @@ for file_n in range(nfiles):
                 maskslicename = nuclei_img.replace('.tiff', f'_yz_{j:03}_masks.tiff')
                 io.imsave(join(slices_path,maskslicename),mask_3d_rescaled[:,:,j],check_contrast=False)
                 print(maskslicename)
-#
-# Run this code in a cellpose environment to train               
-# python -m cellpose --train --use_gpu --verbose --dir ./Slices/ --chan 1 --chan2 2  --learning_rate 0.1 --weight_decay 0.0001 --n_epochs 100 --save_every 10
-# 
-                
-
 # %%
