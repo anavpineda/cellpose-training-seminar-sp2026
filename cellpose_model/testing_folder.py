@@ -4,11 +4,16 @@ from skimage.util import invert
 import tifffile
 import os
 
+"""Code used to test the model and make predicitons
+Inputs: Membrane directory of membrane tiffs
+        Nuclei directory of nuclei tiffs
+        Model path
+        Output: Folder of predicitions"""
 io.logger_setup()
 
 membrane_dir = "/membrane"
 nucleus_dir  = "/nucleus"
-output_path  = "/noisy"
+output_path  = "/predictions"
 model_path   = "/neuromast_cellpose_trained_model"
 
 model = models.CellposeModel(pretrained_model=model_path, gpu=True)
