@@ -17,6 +17,8 @@ Runs an ANOVA on mean intensity per neuromast results
 wt = []
 ly40 = []
 ly400 = []
+
+# "mean_intensities_with_treatment.csv" is the output from mean_intensities_with_treatment.py
 with open("mean_intensities_with_treatment.csv", "r") as f:
     reader = csv.DictReader(f)
     for row in reader:
