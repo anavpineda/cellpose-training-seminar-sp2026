@@ -14,4 +14,5 @@
 1. Data wrangling
 2. Cellpose model
 3. Overlapping analysis
-4. Data output
+4. Heatmap analysis
+5. Data output
