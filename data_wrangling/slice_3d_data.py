@@ -33,7 +33,7 @@ img_path = '/raw'
 #Output path containing all the slices, will be very large
 slices_path = '/Slices'
 
-# Edit to match local naming
+# Edit to match local naming, for example 'she' may be nucleus in this instance
 masklist = natsorted([i for i in os.listdir(mask_path) if '_median.tiff' in i])
 nuclei_list =natsorted([i for i in os.listdir(img_path) if (('membrane' in i) and ('.tiff' in i))])
 membrane_list =natsorted([i for i in os.listdir(img_path) if (('nuclei' in i) and ('.tiff' in i))])
