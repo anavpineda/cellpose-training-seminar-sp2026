@@ -2,6 +2,7 @@
 1. Heatmaps of a neuromast to visualize gene expression can be made through **heatmaps.py**, this needs gene expression files and their matching segmentation
     - This also creates an intensity CSV
 2. This intensity CSV can be used in **calculate_mean_intensity.py**, which calculates the mean intensity for one neuromast
-- Based on the neuromast intensity, an ANOVA can be run to test difference between treatment groups
+3. Based on the neuromast intensity, an ANOVA can be run to test difference between treatment groups using **anova.py**
+
 
 - I can provide gene expression of the deltaD gene for wildtype, 40ly, and 400ly neuromasts [here](https://drive.google.com/drive/folders/1FLiIG_7ykv3GqEMucFM5vUPLPKgbL7rR?usp=sharing)
