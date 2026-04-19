@@ -9,3 +9,9 @@
 
 **Visualization of TIFFs is done through Napari**
 - Napari can be downloaded [here](https://napari.org/stable/getting_started/installation.html)
+
+**Steps**
+1. Data wrangling
+2. Cellpose model
+3. Overlapping analysis
+4. Data output
