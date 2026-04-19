@@ -1,7 +1,7 @@
-"""Train cellpose model using user data; code from https://cellpose.readthedocs.io/en/latest/train.html"""
-
 from cellpose import io, models, train
 io.logger_setup()
+
+"""Train cellpose model using user data; code from https://cellpose.readthedocs.io/en/latest/train.html"""
 
 train_dir = "./Slices/train/"
 test_dir  = "./Slices/test/"
@@ -13,6 +13,7 @@ images, labels, image_names, test_images, test_labels, image_names_test = output
 
 model = models.CellposeModel(gpu=True)
 
+# Parameters can be edited to explore better ways of segmentation training. More info on each can be found at the above link
 model_path, train_losses, test_losses = train.train_seg(model.net,
                             train_data=images, train_labels=labels,
                             test_data=test_images, test_labels=test_labels,
